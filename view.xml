@@ -37,7 +37,7 @@
                         <notebook colspan="4">
                             <page name="personal_information" string="Especificaciones">
                                 <group col="4" colspan="4" name="personal_detail">
-                                    <field name="modelo" />
+                                    <field name="grafica" />
                                     <field name="SSD" />
                                     <field name="RAM" />
                                     <field name="ssoo" />

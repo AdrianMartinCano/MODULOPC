@@ -48,7 +48,7 @@
                             </page>
                             <page name="more_info" string="Más Información">
                                 <group col="4" colspan="4" name="more_info_group">
-                                    <field name="masInfo" />
+                                    <field name="mas_info" />
                                 </group>
                             </page>
                         </notebook>

@@ -1,0 +1,40 @@
+from odoo import models, fields
+
+class OrdenadoresRegistro(models.Model):
+    _name = "ordenadores.cochesregistro"
+    
+    photo = fields.Binary(string='Imagen de Producto')
+    grafica = fields.Selection([
+        ('2070', '2070'),
+        ('2080', '2080'),
+        ('3070', '3070'),
+        ('4070', '4070'),
+        ('4080', '4080')
+    ], string='Tarjeta Gráfica')
+    
+    nombre = fields.Char(string='Nombre', required=True)
+    
+    SSD = fields.Selection([
+        ('128gb', '128gb'),
+        ('256gb', '256gb'),
+        ('512gb', '512gb'),
+        ('1tb', '1tb'),
+        ('2tb', '2tb')
+    ], string='Almacenamiento SSD')
+    
+    RAM = fields.Selection([
+        ('8gb', '8gb'),
+        ('16gb', '16gb'),
+        ('32gb', '32gb'),
+        ('64gb', '64gb'),
+        ('128gb', '128gb')  # Corregido aquí
+    ], string='Memoria RAM')
+    
+    opciones = [
+        ('Con SO', 'Con SO'),
+        ('Sin SO', 'Sin SO'),
+    ]
+    
+    ssoo = fields.Selection(opciones, string="Sistema Operativo")
+    calificaciones = fields.Text(string='Calificaciones Usuarios', required=True)
+    mas_info = fields.Text(string='Más sobre el producto', required=True)

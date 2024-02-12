@@ -27,7 +27,7 @@
                                 <table>
                                     <tr>
                                         <td style="padding-right:10px;"><field name="photo" widget="image" class="oe_left oe_avatar" /></td>
-                                        <td style="padding-right:10px;"><field name="nombre" required="1" placeholder="Nombre" /></td>
+                                        <td style="padding-right:10px;"><field name="grafica" required="1" placeholder="Grafica" /></td>
                                     </tr>
                                 </table>
                             </h1>

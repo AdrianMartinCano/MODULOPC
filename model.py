@@ -12,7 +12,6 @@ class OrdenadoresRegistro(models.Model):
         ('4080', '4080')
     ], string='Tarjeta Gráfica')
     
-    nombre = fields.Char(string='Nombre', required=True)
     
     SSD = fields.Selection([
         ('128gb', '128gb'),

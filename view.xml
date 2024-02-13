@@ -16,7 +16,7 @@
 										<td style="padding-right:10px;"><field name="nombre" placeholder="Nombre PC" /></td>
 										<td style="padding-right:10px;"><field name="SSD" placeholder="Almacenamiento SSD" /></td>
 										<td style="padding-right:10px;"><field name="RAM" placeholder="Cantidad RAM" /></td>
-										<td style="padding-right:10px;"><field name="opciones" placeholder="SSOO" /></td>
+										<td style="padding-right:10px;"><field name="ssoo" placeholder="Sistema Operativo Instalado" /></td>
                                     </tr>
                                 </table>
                             </h1>

@@ -1,5 +1,25 @@
 <odoo>
     <data>
+        <!-- Definición de la vista de árbol -->
+        <record id="view_ordenadoresregistro_tree" model="ir.ui.view">
+            <field name="name">ordenadores.cochesregistro.tree</field>
+            <field name="model">ordenadores.cochesregistro</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree string="Ordenadores">
+                    <field name="photo" widget="image" class="oe_left oe_avatar" />
+                    <field name="nombre" />
+                    <field name="grafica" />
+                    <field name="SSD" />
+                    <field name="RAM" />
+                    <field name="ssoo" />
+                    <field name="calificaciones" />
+                    <field name="mas_info" />
+                </tree>
+            </field>
+        </record>
+        
+        <!-- Definición de la vista de formulario -->
         <record id="view_ordenadoresregistro_form" model="ir.ui.view">
             <field name="name">ordenadores.cochesregistro.form</field>
             <field name="model">ordenadores.cochesregistro</field>
@@ -42,6 +62,7 @@
             </field>
         </record>
 
+        <!-- Definición de la acción -->
         <record id="action_view_ordenadores" model="ir.actions.act_window" >
             <field name="name">Ordenadores</field>
             <field name="res_model">ordenadores.cochesregistro</field>
@@ -52,6 +73,7 @@
             </field>
         </record>
 
+        <!-- Definición del menú -->
         <menuitem id="menu_ordenadores" name="Ordenadores"/> 
         <menuitem id="ordenadores_creacion" name="Mis Ordenadores" parent="menu_ordenadores" action="action_view_ordenadores"/>
     </data>

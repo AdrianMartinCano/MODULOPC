@@ -81,6 +81,6 @@
 
         <!-- Definición del menú -->
         <menuitem id="menu_ordenadores" name="Ordenadores"/> 
-        <menuitem id="ordenadores_creacion" name="Mis Ordenadores" parent="menu_ordenadores" action="action_view_ordenadores"/>
+        <menuitem id="ordenadores_creacion" name="Lista Ordenadores" parent="menu_ordenadores" action="action_view_ordenadores"/>
     </data>
 </odoo>

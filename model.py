@@ -4,6 +4,7 @@ class OrdenadoresRegistro(models.Model):
     _name = "ordenadores.cochesregistro"
     
     photo = fields.Binary(string='Imagen de Producto')
+    nombre= fields.Text(string='Nombre gráfica', required=True)
     grafica = fields.Selection([
         ('2070', '2070'),
         ('2080', '2080'),
@@ -35,5 +36,5 @@ class OrdenadoresRegistro(models.Model):
     ]
     
     ssoo = fields.Selection(opciones, string="Sistema Operativo")
-    calificaciones = fields.Text(string='Calificaciones Usuarios', required=True)
-    mas_info = fields.Text(string='Más sobre el producto', required=True)
+    calificaciones = fields.Text(string='Calificaciones Usuarios')
+    mas_info = fields.Text(string='Más sobre el producto')

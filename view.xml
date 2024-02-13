@@ -13,6 +13,7 @@
                     <field name="SSD" />
                     <field name="RAM" />
                     <field name="ssoo" />
+					<field name="precio" /> 
                     <field name="calificaciones" />
                     <field name="mas_info" />
                 </tree>
@@ -44,6 +45,7 @@
                                     <field name="SSD" />
                                     <field name="RAM" />
                                     <field name="ssoo" />
+									<field name="precio" /> 
                                 </group>
                             </page>
                             <page name="user_ratings" string="Calificaciones Usuarios">

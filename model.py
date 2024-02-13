@@ -34,7 +34,9 @@ class OrdenadoresRegistro(models.Model):
         ('Con SO', 'Con SO'),
         ('Sin SO', 'Sin SO'),
     ]
-    
+
+
+    precio = fields.Float(string='Precio')
     ssoo = fields.Selection(opciones, string="Sistema Operativo")
     calificaciones = fields.Text(string='Calificaciones Usuarios')
     mas_info = fields.Text(string='Más sobre el producto')

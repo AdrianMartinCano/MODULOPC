@@ -4,7 +4,7 @@ class OrdenadoresRegistro(models.Model):
     _name = "ordenadores.cochesregistro"
     
     photo = fields.Binary(string='Imagen de Producto')
-    nombre= fields.Text(string='Nombre gráfica', required=True)
+    nombre= fields.Text(string='Nombre PC', required=True)
     grafica = fields.Selection([
         ('2070', '2070'),
         ('2080', '2080'),

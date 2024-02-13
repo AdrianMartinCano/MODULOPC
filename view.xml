@@ -12,7 +12,11 @@
                                 <table>
                                     <tr>
                                         <td style="padding-right:10px;"><field name="photo" widget="image" class="oe_left oe_avatar" /></td>
-                                        <td style="padding-right:10px;"><field name="nombre" placeholder="Nombre gráfica" /></td>
+                                        <td style="padding-right:10px;"><field name="grafica" placeholder="Tipo gráfica" /></td>
+										<td style="padding-right:10px;"><field name="nombre" placeholder="Nombre PC" /></td>
+										<td style="padding-right:10px;"><field name="ssd" placeholder="Almacenamiento SSD" /></td>
+										<td style="padding-right:10px;"><field name="RAM" placeholder="Cantidad RAM" /></td>
+										<td style="padding-right:10px;"><field name="opciones" placeholder="SSOO" /></td>
                                     </tr>
                                 </table>
                             </h1>

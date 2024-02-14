@@ -30,10 +30,14 @@ class OrdenadoresRegistro(models.Model):
     ], string='Memoria RAM')
     
 
+    opciones = [
+        ('Con SO', 'Con SO'),
+        ('Sin SO', 'Sin SO'),
+    ]
 
+    ssoo = fields.Selection(opciones, string="Sistema Operativo")
 
 
     precio = fields.Float(string='Precio')
-    ssoo = fields.Boolean(string="Sistema Operativo", default=False)
     calificaciones = fields.Text(string='Calificaciones Usuarios')
     mas_info = fields.Text(string='Más sobre el producto')
